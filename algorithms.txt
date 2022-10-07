@@ -1,0 +1,79 @@
+-Binary search
+input  : array [n] , searchValue
+output : the index of value that we need search it
+process :
+read array [n] , searchedValue
+while ( left >= right )
+ middle =(right+left)/2
+ if array[middle] = searchedValue
+  print array[middle]
+ if searchedValue > array[middle]
+ left = mid+1
+if searchedValue < array[middle]
+ right=mid-1
+end loop
+
+--linear search
+input  : array [n] , searchValue
+output : the index of array that we need search it
+process :
+read array [n],searchValue
+while ( array[i] != sarchedValue )
+ i=i+1
+print i  // i is index value of targget value
+
+ MerGeSort
+input  : array
+output : SortedArray
+process :
+Find the middle Point of array
+Split the array to 2 sub array depend middle point ( left and right )
+merge and sort for lift subArray
+merge and sort for right subArray
+merge the sub arrays to bulid sortedArray
+
+- Quick Sort
+input  : array [n]
+output : SortedArray
+process :
+if StartOfArr < EndOfArr
+ Take any number from array ( povit )
+ put pivit in right place // the small element in left of  povit and larger in right
+ quicksort(array,s,pivot-1) // sort for Left side
+ quicksort(array,pivot+1,e) // sort Right side
+
+
+
+
+-- InsertionSort
+input  : array [n]
+output : SortedArray
+process :
+Begin
+for i=1 to n
+ Key=arr[i]
+ j=i-1
+ while j>=0 and array[j]>key
+  array[j+1]=array[j]
+  j=j-1
+array[j+1]=key
+End
+
+
+
+
+-- Bubble Sort
+input  : array [n] // aray of intagers
+output : SortedArray
+process :
+read array [n]
+for i=0 to n
+ for j=0 to n-1
+  if array[j]>array[j+1]
+   Swap
+SortedArray = array[n]
+
+
+
+
+
